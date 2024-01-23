@@ -1,0 +1,281 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+body {
+    background-color: rgb(133, 80, 64);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.back-main {
+    flex: 1 0 auto;
+    margin: 0px;
+}
+
+.main {
+    height: 100%;
+    margin-right: 10%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    background-color: rgb(244, 235, 220);
+    box-shadow: 0 0 50px 50px rgb(244, 235, 220);
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(81, 35, 20);
+    text-align: center;
+}
+
+.h {
+    font-size: 10vh;
+}
+p {
+    margin: 0px;
+    font-size: 3vh;
+}
+
+.menu {
+    margin-top: 4%;
+    text-align: center;
+}
+
+#cb, #dcb, #w, #dw {
+    margin: 10px;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 10vh;
+    background-color: rgb(255, 230, 189);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#cb:hover, #dcb:hover, #w:hover, #dw:hover, #che:hover, #roz:hover, #chess:hover, #p:hover, #n:hover, #s:hover, #a:hover, #c:hover, #orgF:hover, #coke:hover, #cap:hover, #ess:hover, #appF:hover, #tea:hover, #grTea:hover, #cetchup:hover, #kislo:hover, #chezz:hover {
+    cursor: pointer;
+}
+
+#cb {
+    background-image: url('../img/food/chickenBurger.png');
+}
+
+#dcb {
+    background-image: url('../img/food/dobleChickenBurger.png');
+}
+
+#w {
+    background-image: url('../img/food/wopper.png');
+}
+
+#dw {
+    background-image: url('../img/food/dobleWopper.png');
+}
+
+.secondMenu {
+    margin-top: 2%;
+}
+
+#p, #n, #s, #a, #c {
+    margin: 10px;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 10vh;
+    background-color: rgb(255, 230, 189);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#p {
+    background-image: url('../img/food/potato.png');
+}
+#n {
+    background-image: url('../img/food/nagets.png');
+}
+#s {
+    background-image: url('../img/food/salat.png');
+}
+#a {
+    background-image: url('../img/food/apple.png');
+}
+#c {
+    background-image: url('../img/food/carrot.png');
+}
+
+.deserts {
+    margin-top: 2%;
+}
+#che, #roz, #chess {
+    margin: 10px;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 10vh;
+    background-color: rgb(255, 230, 189);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#che {
+    background-image: url('../img/food/charry.png');
+}
+#roz {
+    background-image: url('../img/food/iceCream.png');
+}
+#chess {
+    background-image: url('../img/food/cheescake.png');
+}
+
+.drinks {
+    margin-top: 2%;
+}
+
+#orgF, #coke, #cap, #ess, #appF, #tea, #grTea {
+    margin: 10px;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 10vh;
+    background-color: rgb(255, 230, 189);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#orgF {
+    background-image: url('../img/food/orangeFresh.png');
+}
+#coke {
+    background-image: url('../img/food/coke.png');
+}
+#cap {
+    background-image: url('../img/food/copuchino.png');
+}
+#ess {
+    background-image: url('../img/food/espresso.png');
+}
+#appF {
+    background-image: url('../img/food/appleFresh.png');
+}
+#tea {
+    background-image: url('../img/food/tea.png');
+}
+#grTea {
+    background-image: url('../img/food/greenTea.png');
+}
+
+.soys {
+    margin-top: 2%;
+}
+#cetchup, #kislo, #chezz {
+    margin: 10px;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 10vh;
+    background-color: rgb(255, 230, 189);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#cetchup {
+    background-image: url('../img/food/cetchup.png');
+}
+#kislo {
+    background-image: url('../img/food/kislo.png');
+}
+#chezz {
+    background-image: url('../img/food/sir.png');
+}
+
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(81, 35, 20, 0.5);
+    cursor: pointer;
+    padding: 30px;
+    overflow-y: auto;
+    display: none;
+}
+
+.modalMain {
+    position: relative;
+    max-width: 600px;
+    background-color: azure;
+    margin: auto;
+    color: black;
+    border-radius: 16px;
+    padding: 30px;
+    cursor: default;
+}
+
+.modalTitle {
+    margin-bottom: 30px;
+}
+
+.modalClose {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    transition: outline-color .15s ease-in-out;
+    border-radius: 3px;
+    padding: 0;
+    text-align: center;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.modalClose:focus-visible {
+    outline-color: red;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.mainTable {
+    font-size: 25px;
+    
+}
+
+.tableKBZY {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#kbzy {
+    border: 1px solid #000;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+
+.authors {
+    background-color: rgb(81, 35, 20);
+    flex: 0 0 auto;
+    text-align: center;
+
+    color: rgb(244, 235, 220);
+    font-family: 'OwnHand', sans-serif;
+    font-size: 18px;
+}
