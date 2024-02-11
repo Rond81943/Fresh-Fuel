@@ -168,7 +168,7 @@ let modalForm = [
         ygl: '3.9'
     },
     {
-        h1: '<i>Экспрессо</i>',
+        h1: '<i>Эспрессо</i>',
         dis: '100 миллилитров кофейного нектара! Бодрящий и насыщенный в нашем экспрессо.',
         mas: '100 миллилитров',
         cal: '2',
@@ -300,6 +300,34 @@ let modalForm = [
 // };
 
 //btnCB.addEventListener('click', modalController({number: 0}));
+
+function myFunction(x) {
+    if (x.matches) { // Если медиа запрос совпадает
+        let tableKBZY = document.querySelector('.tableKBZY');
+        tableKBZY.innerHTML = `
+            <tr id="kbzy">
+                <td id="kbzy"><b>Калории</b></td>
+                <td id="kbzy"><b>Белки</b></td>
+            <tr id="kbzy">
+                <td id="kbzy" class="callor">180</td>
+                <td id="kbzy" class="belok">10</td>
+            </tr>
+            <tr id="kbzy">
+                <td id="kbzy"><b>Жиры</b></td>
+                <td id="kbzy"><b>Углеводы</b></td>
+            </tr>
+            <tr id="kbzy">
+                <td id="kbzy" class="ziri">7</td>
+                <td id="kbzy" class="ylevod">20</td>
+            </tr>
+        `;
+    } 
+}
+  
+var x = window.matchMedia("(max-width: 500px)")
+myFunction(x)
+x.addListener(myFunction)
+
 
 btnCB.addEventListener('click', ({number=0}) => {
     modal.style.cssText = `

@@ -218,6 +218,25 @@ p {
     cursor: default;
 }
 
+@media(max-width: 500px) {
+
+    .modal {
+        padding: 5px;
+    }
+
+    .mainMain {
+        max-width: 200px;
+        padding: 0px;
+        margin: 0;
+    }
+    
+}
+
+    
+
+
+
+
 .modalTitle {
     margin-bottom: 30px;
 }
