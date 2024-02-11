@@ -222,10 +222,11 @@ p {
 
     .modal {
         padding: 5px;
+        margin: 0;
     }
 
-    .mainMain {
-        max-width: 200px;
+    .mainTable {
+        max-width: 100px;
         padding: 0px;
         margin: 0;
     }

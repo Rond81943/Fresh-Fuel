@@ -307,19 +307,28 @@ function myFunction(x) {
         tableKBZY.innerHTML = `
             <tr id="kbzy">
                 <td id="kbzy"><b>Калории</b></td>
-                <td id="kbzy"><b>Белки</b></td>
             <tr id="kbzy">
                 <td id="kbzy" class="callor">180</td>
-                <td id="kbzy" class="belok">10</td>
             </tr>
             <tr id="kbzy">
+                <td id="kbzy"><b>Белки</b></td>
+            </tr>
+            <tr id="kbzy">
+                <td id="kbzy" class="belok">10</td>
+            </tr>  
+            <tr id="kbzy">
                 <td id="kbzy"><b>Жиры</b></td>
-                <td id="kbzy"><b>Углеводы</b></td>
             </tr>
             <tr id="kbzy">
                 <td id="kbzy" class="ziri">7</td>
+            </tr>
+            <tr id="kbzy">
+                <td id="kbzy"><b>Углеводы</b></td>
+            </tr>
+            <tr id="kbzy">
                 <td id="kbzy" class="ylevod">20</td>
             </tr>
+            
         `;
     } 
 }
