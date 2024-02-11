@@ -216,6 +216,7 @@ p {
     border-radius: 16px;
     padding: 30px;
     cursor: default;
+    overflow: auto;
 }
 
 @media(max-width: 500px) {
@@ -225,9 +226,9 @@ p {
         margin: 0;
     }
 
-    .mainTable {
-        max-width: 100px;
-        padding: 0px;
+    .modalMain {
+
+        padding: 2px;
         margin: 0;
     }
     
