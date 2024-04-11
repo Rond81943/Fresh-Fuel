@@ -338,7 +338,7 @@ myFunction(x)
 x.addListener(myFunction)
 
 
-btnCB.addEventListener('click', ({number=0}) => {
+btnCB.addEventListener('click', () => {
     modal.style.cssText = `
         display: flex;
         visibility: hidden;
@@ -360,24 +360,24 @@ btnCB.addEventListener('click', ({number=0}) => {
     modal.style.opacity = 1;
 
     h.innerHTML = '';
-    h.innerHTML = modalForm[number].h1;
+    h.innerHTML = modalForm[0].h1;
     discription.innerHTML = '';
-    discription.innerHTML = modalForm[number].dis;
+    discription.innerHTML = modalForm[0].dis;
     massa.innerHTML = '';
-    massa.innerHTML = modalForm[number].mas;
+    massa.innerHTML = modalForm[0].mas;
     callor.innerHTML = '';
-    callor.innerHTML = modalForm[number].cal;
+    callor.innerHTML = modalForm[0].cal;
     belok.innerHTML = '';
-    belok.innerHTML = modalForm[number].bel;
+    belok.innerHTML = modalForm[0].bel;
     ziri.innerHTML = '';
-    ziri.innerHTML = modalForm[number].zir;
+    ziri.innerHTML = modalForm[0].zir;
     yglevod.innerHTML = '';
-    yglevod.innerHTML = modalForm[number].ygl;
+    yglevod.innerHTML = modalForm[0].ygl;
 
     modal.addEventListener('click', closeModal);
 });
 
-btnDCB.addEventListener('click', ({number=1}) => {
+btnDCB.addEventListener('click', () => {
     modal.style.cssText = `
         display: flex;
         visibility: hidden;
@@ -399,19 +399,19 @@ btnDCB.addEventListener('click', ({number=1}) => {
     modal.style.opacity = 1;
 
     h.innerHTML = '';
-    h.innerHTML = modalForm[number].h1;
+    h.innerHTML = modalForm[1].h1;
     discription.innerHTML = '';
-    discription.innerHTML = modalForm[number].dis;
+    discription.innerHTML = modalForm[1].dis;
     massa.innerHTML = '';
-    massa.innerHTML = modalForm[number].mas;
+    massa.innerHTML = modalForm[1].mas;
     callor.innerHTML = '';
-    callor.innerHTML = modalForm[number].cal;
+    callor.innerHTML = modalForm[1].cal;
     belok.innerHTML = '';
-    belok.innerHTML = modalForm[number].bel;
+    belok.innerHTML = modalForm[1].bel;
     ziri.innerHTML = '';
-    ziri.innerHTML = modalForm[number].zir;
+    ziri.innerHTML = modalForm[1].zir;
     yglevod.innerHTML = '';
-    yglevod.innerHTML = modalForm[number].ygl;
+    yglevod.innerHTML = modalForm[1].ygl;
 
     modal.addEventListener('click', closeModal);
 });
